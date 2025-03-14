@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stardew Valley - Home</title>
+  <link rel="icon" href="IMG/StardewValleyIco.ico" type="image/x-icon">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+  />
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  />
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Roboto+Slab:wght@100..900&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
+
+<body id="home">
+   <!-- Botón Modo Oscuro -->
+   <button id="darkModeToggle" class="btn btn-dark position-fixed top-0 end-0 m-3">🌙</button>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="nav">
+      <div class="container-fluid">
+        <img src="IMG/StardewValleyIco.ico" alt="icon" width="30" height="26">
+        <a class="navbar-brand fw-bold" href="#">Stardew Valley</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto me-3 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Page/AboutMe.html">About Me</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="Page/Trailers.html">Trailers</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="Page/Media.html">Media</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="Page/Wiki.html">Wiki</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="Page/Blog.html">Blog</a>
+            </li> 
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-warning" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero d-flex flex-column justify-content-center align-items-center text-center animate" id="index">
+    <div class="container">
+      <img
+        src="IMG/Main_Logo.png"
+        alt="Stardew Valley Logo"
+        class="img-fluid mb-4"
+        style="max-width: 400px;"
+      />
+      <h1 class="text-white display-5 fw-bold mb-3">¡Bienvenido a Stardew Valley!</h1>
+      <p class="text-white mb-4">
+        Has heredado la antigua granja de tu abuelo en <strong>Stardew Valley</strong>.
+        ¡Armado con herramientas usadas y algunas monedas, te dispones a comenzar tu nueva vida!
+      </p>
+      <button
+        class="btn btn-warning btn-lg"
+        data-bs-toggle="modal"
+        data-bs-target="#videoModal"
+      >
+        Ver Tráiler
+      </button>
+    </div>
+  </section>
+
+  <!-- Modal de Video -->
+  <div
+    class="modal fade"
+    id="videoModal"
+    tabindex="-1"
+    aria-labelledby="videoModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="videoModalLabel">Tráiler de Stardew Valley</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body ratio ratio-16x9">
+          <iframe
+            src="https://www.youtube.com/embed/ot7uXNQskhs"
+            title="Stardew Valley Trailer"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Carrusel -->
+  <section class="container py-5 animate" id="carousel-section">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner rounded-4 shadow">
+        <div class="carousel-item active">
+          <img src="IMG/star2.gif" class="d-block w-100 lightbox-trigger" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="IMG/star3.gif" class="d-block w-100 lightbox-trigger" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="IMG/star4.gif" class="d-block w-100 lightbox-trigger" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Novedades -->
+  <section class="py-5 animate" id="novedades">
+    <div class="container">
+      <h2 class="text-center mb-5">Novedades</h2>
+      <div class="row g-4">
+        <!-- Tarjeta 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <h5 class="card-title text-warning">Crea la granja de tus sueños</h5>
+              <p class="card-text">
+                ¡Convierte tus campos inundados de vegetación en una granja llena de vida y abundancia!
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Tarjeta 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <h5 class="card-title text-warning">Aprende a vivir de la tierra</h5>
+              <p class="card-text">
+                Cría animales, pesca, cuida los cultivos, fabrica objetos o hazlo todo. ¡La elección es tuya!
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Tarjeta 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <h5 class="card-title text-warning">Sea parte de la comunidad local</h5>
+              <p class="card-text">
+                Pelican Town es el hogar de más de 30 residentes con quienes puedes hacerte amigo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Tarjeta 4 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <h5 class="card-title text-warning">Conoce a alguien especial</h5>
+              <p class="card-text">
+                Con 12 habitantes del pueblo con los que salir, ¡quizás incluso encuentres a alguien con quien formar una familia!
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Tarjeta 5 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <h5 class="card-title text-warning">Explora cuevas enormes y misteriosas</h5>
+              <p class="card-text">
+                ¡Encuentra monstruos peligrosos y valiosos tesoros en las profundidades del subsuelo!
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Tarjeta 6 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <h5 class="card-title text-warning">Personaliza</h5>
+              <p class="card-text">
+                ¡Hay cientos de opciones de personajes y decoración del hogar para elegir!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close-lightbox">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+  </div>
+
+  <div class="audio-container">
+    <button id="playPauseBtn" class="btn">⏸</button>
+    <input type="range" id="volumeControl" class="volume-slider" min="0" max="1" step="0.1" value="1">
+</div>
+
+<audio id="audio" loop autoplay>
+    <source src="sound/01. Stardew Valley Overture.mp3" type="audio/mpeg">
+</audio>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-center text-white py-4">
+    <div class="container">
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/StardewValley" role="button"
+          ><i class="bi bi-facebook"></i
+        ></a>
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://x.com/concernedape" role="button"
+          ><i class="bi bi-twitter"></i
+        ></a>
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.reddit.com/r/StardewValley/?rdt=58990" role="button"
+          ><i class="bi bi-reddit"></i
+        ></a>
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="pablogarcia@emilianisomascos.edu.gt" role="button"
+          ><i class="bi bi-envelope-fill"></i
+        ></a>
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Pablo-Garcia30" role="button"
+          ><i class="bi bi-github"></i
+        ></a>
+      </section>
+      <div class="text-center p-3">
+        © 2025 Copyright:
+        <a class="text-white" href="mailto:https://github.com/Pablo-Garcia30">PabloGarcia</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- Custom JS -->
+  <script src="JS/main.js"></script>
+</body>
+</html>
