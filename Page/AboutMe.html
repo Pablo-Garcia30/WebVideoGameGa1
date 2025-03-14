@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stardew Valley - AboutMe</title>
+  <link rel="icon" href="../IMG/StardewValleyIco.ico" type="image/x-icon">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+  />
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  />
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Roboto+Slab:wght@100..900&display=swap"
+    rel="stylesheet"
+  />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+  <link rel="stylesheet" href="../CSS/style.css" />
+</head>
+
+<body id="home">
+   <!-- Botón Modo Oscuro -->
+   <button id="darkModeToggle" class="btn btn-dark position-fixed top-0 end-0 m-3">🌙</button>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="nav">
+      <div class="container-fluid">
+        <img src="../IMG/StardewValleyIco.ico" alt="icon" width="30" height="26">
+        <a class="navbar-brand fw-bold" href="../index.html">Stardew Valley</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto me-3 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Page/AboutMe.html">About Me</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="../Page/Trailers.html">Trailers</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="../Page/Media.html">Media</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="../Page/Wiki.html">Wiki</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="../Page/Blog.html">Blog</a>
+            </li> 
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-warning" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero d-flex flex-column justify-content-center align-items-center text-center animate" id="acerca">
+    <div class="container">
+      <img
+        src="../IMG/Main_Logo.png"
+        alt="Stardew Valley Logo"
+        class="img-fluid mb-4"
+        style="max-width: 400px;"
+      />
+      <h1 class="text-white display-5 fw-bold mb-3">¡Acerca de!</h1>
+      <p class="text-white mb-4">
+        Hoja informativa</strong>.
+      </p>
+      <button
+        class="btn btn-warning btn-lg"
+        data-bs-toggle="modal"
+        data-bs-target="#videoModal"
+      >
+        Despcripción
+      </button>
+    </div>
+  </section>
+
+  <!-- Modal de descripción mejorado -->
+<div
+class="modal fade"
+id="videoModal"
+tabindex="-1"
+aria-labelledby="videoModalLabel"
+aria-hidden="true"
+>
+<div class="modal-dialog modal-dialog-centered modal-lg">
+  <div class="modal-content animate__animated animate__fadeIn">
+    <!-- Encabezado del modal -->
+    <div class="modal-header bg-dark text-white">
+      <h5 class="modal-title" id="videoModalLabel">
+        Descripción de Stardew Valley
+      </h5>
+      <button
+        type="button"
+        class="btn-close btn-close-white"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      ></button>
+    </div>
+
+    <!-- Cuerpo del modal -->
+    <div class="modal-body text-center p-4">
+      <p class="text-justify fs-5">
+        ¡Stardew Valley es un RPG campestre de final abierto! Has heredado la
+        antigua granja de tu abuelo en Stardew Valley. Armado con herramientas
+        usadas y unas pocas monedas, te dispones a comenzar una nueva vida.
+        ¿Podrás aprender a vivir de la tierra y convertir estos campos
+        descuidados en un hogar próspero? No será fácil. Desde que Joja
+        Corporation llegó al pueblo, las antiguas formas de vida
+        prácticamente han desaparecido. Pero con esfuerzo y dedicación, ¡quizás
+        seas quien devuelva la grandeza a Stardew Valley!
+      </p>
+    </div>
+
+    <!-- Pie del modal -->
+    <div class="modal-footer bg-light">
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-dismiss="modal"
+      >
+        Cerrar
+      </button>
+    </div>
+  </div>
+</div>
+</div>
+
+<section class="container py-5">
+  <div class="row">
+      <div class="col-md-12 animate">
+          <h2 class="text-primary">Historia</h2>
+          <p>Stardew Valley fue creado por el desarrollador de juegos Eric Barone, bajo el alias de ConcernedApe. Durante los cuatro años que pasó desarrollándolo en solitario, aprendió por su cuenta las habilidades necesarias para producir la música, el arte, la programación y el diseño del juego. El juego se lanzó para PC el 26 de febrero de 2016 y en dos meses superó el millón de copias vendidas.</p>
+          <p>En pocos meses, el juego amplió la compatibilidad con Mac y Linux; se lanzó para Xbox One y PlayStation 4 en diciembre de 2016, Nintendo Switch a finales de 2017, iOS en octubre de 2018 y Android en marzo de 2019. Ha habido cinco actualizaciones importantes posteriores al lanzamiento: la primera agregó nuevos mapas de granja, opciones de matrimonio y contenido; la segunda amplió los idiomas compatibles para incluir alemán, español, portugués brasileño, ruso, japonés y chino simplificado. La tercera actualización (a finales de 2018) agregó la funcionalidad multijugador, con código de red realizado por el (entonces) programador de Chucklefish, Tom Coxon. A partir de la cuarta actualización, Eric formó un pequeño equipo para ayudarle a actualizar el juego. La cuarta, quinta y sexta actualizaciones añadieron una cantidad considerable de contenido nuevo.</p>
+          <p>Hasta diciembre de 2024, Stardew Valley vendió más de 41 millones de copias en todas las plataformas, con más de 26 millones de copias vendidas en PC y 7,9 millones de copias en Nintendo Switch.</p>
+      </div>
+  </div>
+  <div class="row mt-4">
+      <h2 class="text-primary text-center mb-4">Características</h2>
+      <div class="col-md-4 animate">
+          <div class="card shadow">
+              <div class="card-body">
+                  <h5 class="card-title text-warning">Crea la granja de tus sueños</h5>
+                  <p class="card-text">Construye tu granja desde cero en 1 de los 5 diseños de mapas adecuados a tu estilo de juego.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 animate">
+          <div class="card shadow">
+              <div class="card-body">
+                  <h5 class="card-title text-warning">Domina tus habilidades ganaderas</h5>
+                  <p class="card-text">Cría animales, cultiva cultivos, inicia un huerto y construye máquinas útiles.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 animate">
+          <div class="card shadow">
+              <div class="card-body">
+                  <h5 class="card-title text-warning">Sea parte de la comunidad local</h5>
+                  <p class="card-text">Conozca a los más de 30 residentes de Pelican Town.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 animate mt-4">
+          <div class="card shadow">
+              <div class="card-body">
+                  <h5 class="card-title text-warning">Personaliza tu granjero</h5>
+                  <p class="card-text">Hay cientos de opciones de personalización de personajes para elegir.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 animate mt-4">
+          <div class="card shadow">
+              <div class="card-body">
+                  <h5 class="card-title text-warning">Explora cuevas inmensas y misteriosas</h5>
+                  <p class="card-text">¡Encuentra monstruos peligrosos y tesoros valiosos en las profundidades del subsuelo!</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 animate mt-4">
+          <div class="card shadow">
+              <div class="card-body">
+                  <h5 class="card-title text-warning">Multijugador</h5>
+                  <p class="card-text">¡Invita de 1 a 3 jugadores a unirse a ti en el valle y construyan juntos una granja próspera!</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close-lightbox">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+  </div>
+
+  <div class="audio-container">
+    <button id="playPauseBtn" class="btn">⏸</button>
+    <input type="range" id="volumeControl" class="volume-slider" min="0" max="1" step="0.1" value="1">
+</div>
+
+<audio id="audio" loop autoplay>
+    <source src="sound/01. Stardew Valley Overture.mp3" type="audio/mpeg">
+</audio>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-center text-white py-4">
+    <div class="container">
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/StardewValley" role="button"
+          ><i class="bi bi-facebook"></i
+        ></a>
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://x.com/concernedape" role="button"
+          ><i class="bi bi-twitter"></i
+        ></a>
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.reddit.com/r/StardewValley/?rdt=58990" role="button"
+          ><i class="bi bi-reddit"></i
+        ></a>
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="mailto:pablogarcia@emilianisomascos.edu.gt" role="button"
+          ><i class="bi bi-envelope-fill"></i
+        ></a>
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Pablo-Garcia30" role="button"
+          ><i class="bi bi-github"></i
+        ></a>
+      </section>
+      <div class="text-center p-3">
+        © 2025 Copyright:
+        <a class="text-white" href="https://github.com/Pablo-Garcia30">PabloGarcia</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- Custom JS -->
+  <script src="../JS/main.js"></script>
+</body>
+</html>
