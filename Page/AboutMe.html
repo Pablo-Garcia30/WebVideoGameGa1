@@ -28,6 +28,10 @@
     href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Roboto+Slab:wght@100..900&display=swap"
     rel="stylesheet"
   />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
   <link rel="stylesheet" href="../CSS/style.css" />
 </head>
 
@@ -38,8 +42,8 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="nav">
       <div class="container-fluid">
-        <img src="IMG/StardewValleyIco.ico" alt="icon" width="30" height="26">
-        <a class="navbar-brand fw-bold" href="#">Stardew Valley</a>
+        <img src="../IMG/StardewValleyIco.ico" alt="icon" width="30" height="26">
+        <a class="navbar-brand fw-bold" href="../index.html">Stardew Valley</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -60,19 +64,19 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Page/AboutMe.html">About Me</a>
+              <a class="nav-link" href="../Page/AboutMe.html">About Me</a>
             </li> 
             <li class="nav-item">
-              <a class="nav-link" href="Page/Trailers.html">Trailers</a>
+              <a class="nav-link" href="../Page/Trailers.html">Trailers</a>
             </li> 
             <li class="nav-item">
-              <a class="nav-link" href="Page/Media.html">Media</a>
+              <a class="nav-link" href="../Page/Media.html">Media</a>
             </li> 
             <li class="nav-item">
-              <a class="nav-link" href="Page/Wiki.html">Wiki</a>
+              <a class="nav-link" href="../Page/Wiki.html">Wiki</a>
             </li> 
             <li class="nav-item">
-              <a class="nav-link" href="Page/Blog.html">Blog</a>
+              <a class="nav-link" href="../Page/Blog.html">Blog</a>
             </li> 
           </ul>
           <form class="d-flex" role="search">
@@ -109,174 +113,123 @@
         data-bs-toggle="modal"
         data-bs-target="#videoModal"
       >
-        Ver Tráiler
+        Despcripción
       </button>
     </div>
   </section>
 
-  <!-- Modal de Video -->
-  <div
-    class="modal fade"
-    id="videoModal"
-    tabindex="-1"
-    aria-labelledby="videoModalLabel"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="videoModalLabel">Tráiler de Stardew Valley</h5>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="modal-body ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/ot7uXNQskhs"
-            title="Stardew Valley Trailer"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
+  <!-- Modal de descripción mejorado -->
+<div
+class="modal fade"
+id="videoModal"
+tabindex="-1"
+aria-labelledby="videoModalLabel"
+aria-hidden="true"
+>
+<div class="modal-dialog modal-dialog-centered modal-lg">
+  <div class="modal-content animate__animated animate__fadeIn">
+    <!-- Encabezado del modal -->
+    <div class="modal-header bg-dark text-white">
+      <h5 class="modal-title" id="videoModalLabel">
+        Descripción de Stardew Valley
+      </h5>
+      <button
+        type="button"
+        class="btn-close btn-close-white"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      ></button>
+    </div>
+
+    <!-- Cuerpo del modal -->
+    <div class="modal-body text-center p-4">
+      <p class="text-justify fs-5">
+        ¡Stardew Valley es un RPG campestre de final abierto! Has heredado la
+        antigua granja de tu abuelo en Stardew Valley. Armado con herramientas
+        usadas y unas pocas monedas, te dispones a comenzar una nueva vida.
+        ¿Podrás aprender a vivir de la tierra y convertir estos campos
+        descuidados en un hogar próspero? No será fácil. Desde que Joja
+        Corporation llegó al pueblo, las antiguas formas de vida
+        prácticamente han desaparecido. Pero con esfuerzo y dedicación, ¡quizás
+        seas quien devuelva la grandeza a Stardew Valley!
+      </p>
+    </div>
+
+    <!-- Pie del modal -->
+    <div class="modal-footer bg-light">
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-dismiss="modal"
+      >
+        Cerrar
+      </button>
     </div>
   </div>
+</div>
+</div>
 
-
-  <!-- Carrusel -->
-  <section class="container py-5 animate" id="carousel-section">
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
+<section class="container py-5">
+  <div class="row">
+      <div class="col-md-12 animate">
+          <h2 class="text-primary">Historia</h2>
+          <p>Stardew Valley fue creado por el desarrollador de juegos Eric Barone, bajo el alias de ConcernedApe. Durante los cuatro años que pasó desarrollándolo en solitario, aprendió por su cuenta las habilidades necesarias para producir la música, el arte, la programación y el diseño del juego. El juego se lanzó para PC el 26 de febrero de 2016 y en dos meses superó el millón de copias vendidas.</p>
+          <p>En pocos meses, el juego amplió la compatibilidad con Mac y Linux; se lanzó para Xbox One y PlayStation 4 en diciembre de 2016, Nintendo Switch a finales de 2017, iOS en octubre de 2018 y Android en marzo de 2019. Ha habido cinco actualizaciones importantes posteriores al lanzamiento: la primera agregó nuevos mapas de granja, opciones de matrimonio y contenido; la segunda amplió los idiomas compatibles para incluir alemán, español, portugués brasileño, ruso, japonés y chino simplificado. La tercera actualización (a finales de 2018) agregó la funcionalidad multijugador, con código de red realizado por el (entonces) programador de Chucklefish, Tom Coxon. A partir de la cuarta actualización, Eric formó un pequeño equipo para ayudarle a actualizar el juego. La cuarta, quinta y sexta actualizaciones añadieron una cantidad considerable de contenido nuevo.</p>
+          <p>Hasta diciembre de 2024, Stardew Valley vendió más de 41 millones de copias en todas las plataformas, con más de 26 millones de copias vendidas en PC y 7,9 millones de copias en Nintendo Switch.</p>
       </div>
-      <div class="carousel-inner rounded-4 shadow">
-        <div class="carousel-item active">
-          <img src="IMG/star2.gif" class="d-block w-100 lightbox-trigger" alt="..." />
-        </div>
-        <div class="carousel-item">
-          <img src="IMG/star3.gif" class="d-block w-100 lightbox-trigger" alt="..." />
-        </div>
-        <div class="carousel-item">
-          <img src="IMG/star4.gif" class="d-block w-100 lightbox-trigger" alt="..." />
-        </div>
+  </div>
+  <div class="row mt-4">
+      <h2 class="text-primary text-center mb-4">Características</h2>
+      <div class="col-md-4 animate">
+          <div class="card shadow">
+              <div class="card-body">
+                  <h5 class="card-title text-warning">Crea la granja de tus sueños</h5>
+                  <p class="card-text">Construye tu granja desde cero en 1 de los 5 diseños de mapas adecuados a tu estilo de juego.</p>
+              </div>
+          </div>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Siguiente</span>
-      </button>
-    </div>
-  </section>
-
-  <!-- Novedades -->
-  <section class="py-5 animate" id="novedades">
-    <div class="container">
-      <h2 class="text-center mb-5">Novedades</h2>
-      <div class="row g-4">
-        <!-- Tarjeta 1 -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow">
-            <div class="card-body">
-              <h5 class="card-title text-warning">Crea la granja de tus sueños</h5>
-              <p class="card-text">
-                ¡Convierte tus campos inundados de vegetación en una granja llena de vida y abundancia!
-              </p>
-            </div>
+      <div class="col-md-4 animate">
+          <div class="card shadow">
+              <div class="card-body">
+                  <h5 class="card-title text-warning">Domina tus habilidades ganaderas</h5>
+                  <p class="card-text">Cría animales, cultiva cultivos, inicia un huerto y construye máquinas útiles.</p>
+              </div>
           </div>
-        </div>
-        <!-- Tarjeta 2 -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow">
-            <div class="card-body">
-              <h5 class="card-title text-warning">Aprende a vivir de la tierra</h5>
-              <p class="card-text">
-                Cría animales, pesca, cuida los cultivos, fabrica objetos o hazlo todo. ¡La elección es tuya!
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- Tarjeta 3 -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow">
-            <div class="card-body">
-              <h5 class="card-title text-warning">Sea parte de la comunidad local</h5>
-              <p class="card-text">
-                Pelican Town es el hogar de más de 30 residentes con quienes puedes hacerte amigo.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- Tarjeta 4 -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow">
-            <div class="card-body">
-              <h5 class="card-title text-warning">Conoce a alguien especial</h5>
-              <p class="card-text">
-                Con 12 habitantes del pueblo con los que salir, ¡quizás incluso encuentres a alguien con quien formar una familia!
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- Tarjeta 5 -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow">
-            <div class="card-body">
-              <h5 class="card-title text-warning">Explora cuevas enormes y misteriosas</h5>
-              <p class="card-text">
-                ¡Encuentra monstruos peligrosos y valiosos tesoros en las profundidades del subsuelo!
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- Tarjeta 6 -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow">
-            <div class="card-body">
-              <h5 class="card-title text-warning">Personaliza</h5>
-              <p class="card-text">
-                ¡Hay cientos de opciones de personajes y decoración del hogar para elegir!
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
-  </section>
+      <div class="col-md-4 animate">
+          <div class="card shadow">
+              <div class="card-body">
+                  <h5 class="card-title text-warning">Sea parte de la comunidad local</h5>
+                  <p class="card-text">Conozca a los más de 30 residentes de Pelican Town.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 animate mt-4">
+          <div class="card shadow">
+              <div class="card-body">
+                  <h5 class="card-title text-warning">Personaliza tu granjero</h5>
+                  <p class="card-text">Hay cientos de opciones de personalización de personajes para elegir.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 animate mt-4">
+          <div class="card shadow">
+              <div class="card-body">
+                  <h5 class="card-title text-warning">Explora cuevas inmensas y misteriosas</h5>
+                  <p class="card-text">¡Encuentra monstruos peligrosos y tesoros valiosos en las profundidades del subsuelo!</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 animate mt-4">
+          <div class="card shadow">
+              <div class="card-body">
+                  <h5 class="card-title text-warning">Multijugador</h5>
+                  <p class="card-text">¡Invita de 1 a 3 jugadores a unirse a ti en el valle y construyan juntos una granja próspera!</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
 
   <!-- Lightbox -->
   <div id="lightbox" class="lightbox">

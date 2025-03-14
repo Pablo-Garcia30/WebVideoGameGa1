@@ -1,4 +1,17 @@
 document.addEventListener("DOMContentLoaded", function() {
+  let progressBar = document.getElementById("progress-bar");
+  let loaderContainer = document.getElementById("loader-container");
+  let width = 0;
+
+  let loading = setInterval(function () {
+    if (width >= 100) {
+      clearInterval(loading);
+      loaderContainer.style.display = "none"; // Oculta el loader cuando termine
+    } else {
+      width += 5;
+      progressBar.style.width = width + "%";
+    }
+  }, 100);
     // Modo Oscuro
     const darkModeToggle = document.getElementById("darkModeToggle");
     darkModeToggle.addEventListener("click", function() {
