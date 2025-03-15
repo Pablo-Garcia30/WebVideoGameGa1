@@ -163,10 +163,7 @@
   max-height: 300px;
 }
 
-#med {
-  height: auto;
-  max-height: 300px;
-}
+
 
 
 .history-image-container {
@@ -239,6 +236,8 @@ max-width: 200px;
     align-items: center;
     justify-content: center;
     text-align: center;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0));                      
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0));
   }
 
   #trailers {
@@ -250,6 +249,8 @@ max-width: 200px;
     align-items: center;
     justify-content: center;
     text-align: center;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0));                      
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0));
   }
 
   #media {
@@ -261,6 +262,8 @@ max-width: 200px;
     align-items: center;
     justify-content: center;
     text-align: center;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0));                      
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0));
   }
 
 
