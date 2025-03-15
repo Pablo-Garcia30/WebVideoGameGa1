@@ -158,6 +158,49 @@
   height: auto;
   max-height: 300px;
 }
+
+
+.history-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.history-image {
+  width: 100%;
+  max-width: 400px; /* Ajusta este valor según necesites */
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.history-image:hover {
+  transform: scale(1.05);
+}
+
+@media (min-width: 992px) {
+  .history-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  
+  .history-text {
+      flex: 1;
+      padding-right: 20px;
+  }
+
+  .history-img-container {
+      flex-shrink: 0;
+      max-width: 40%; /* Reduce el ancho para equilibrar */
+  }
+
+  .history-image {
+      max-width: 100%;
+  }
+}
 footer {
 text-align: center;
 }
@@ -183,6 +226,17 @@ max-width: 200px;
     width: 100%;
     min-height: 100vh;
     background: url("../IMG/AcercaDe.gif") center center / cover no-repeat fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #trailers {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url("../IMG/Trailers.gif") center center / cover no-repeat fixed;
     display: flex;
     align-items: center;
     justify-content: center;
