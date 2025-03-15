@@ -3,15 +3,9 @@ document.addEventListener("DOMContentLoaded", function() {
   let loaderContainer = document.getElementById("loader-container");
   let width = 0;
 
-  let loading = setInterval(function () {
-    if (width >= 100) {
-      clearInterval(loading);
-      loaderContainer.style.display = "none"; // Oculta el loader cuando termine
-    } else {
-      width += 5;
-      progressBar.style.width = width + "%";
-    }
-  }, 100);
+  setTimeout(function () {
+    document.getElementById("loader-container").style.display = "none";
+}, 3000); // Simula una carga de 3 segundos
     // Modo Oscuro
     const darkModeToggle = document.getElementById("darkModeToggle");
     darkModeToggle.addEventListener("click", function() {
