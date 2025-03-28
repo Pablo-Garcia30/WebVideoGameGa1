@@ -1,33 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Stardew Valley - Wiki</title>
   <link rel="icon" href="../IMG/StardewValleyIco.ico" type="image/x-icon">
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-    crossorigin="anonymous"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-  />
-  <link
-    rel="preconnect"
-    href="https://fonts.googleapis.com"
-  />
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Roboto+Slab:wght@100..900&display=swap"
-    rel="stylesheet"
-  />
+    rel="stylesheet" />
   <link rel="stylesheet" href="../CSS/style.css" />
   <link rel="stylesheet" href="../CSS/style2.css" />
 </head>
@@ -36,25 +22,17 @@
   <div id="loader-container">
     <p id="loader-text">Cargando<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span></p>
   </div>
-  
-  <!-- Botón Modo Oscuro -->
+
   <button id="darkModeToggle" class="btn btn-dark position-fixed top-0 end-0 m-3">🌙</button>
-  
+
   <!-- Navbar -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="nav">
       <div class="container-fluid">
         <img src="../IMG/StardewValleyIco.ico" alt="icon" width="30" height="26">
         <a class="navbar-brand fw-bold" href="../index.html">Stardew Valley</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -65,27 +43,22 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="AboutMe.html">About Me</a>
-            </li> 
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="Trailers.html">Trailers</a>
-            </li> 
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="Media.html">Media</a>
-            </li> 
+            </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="Wiki.html">Wiki</a>
-            </li> 
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="Blog.html">Blog</a>
-            </li> 
+            </li>
           </ul>
           <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Buscar en la Wiki"
-              aria-label="Search"
-            />
+            <input class="form-control me-2" type="search" placeholder="Buscar en la Wiki" aria-label="Search" />
             <button class="btn btn-warning" type="submit">
               <i class="bi bi-search"></i>
             </button>
@@ -113,140 +86,132 @@
     </div>
   </section>
 
-  <!-- Categorías Wiki -->
   <section class="py-5 animate" id="wiki-categories">
     <div class="container">
       <h2 class="trailer-title text-center mb-5">Categorías</h2>
-      
+
       <div class="row g-4">
-        <!-- Categoría 1 -->
         <div class="col-md-4 col-sm-6">
-            <a href="https://es.stardewvalleywiki.com/Aldeanos">
-          <div class="category-card">
-            <div class="category-icon">
-              <i class="bi bi-people-fill"></i>
+          <a href="https://es.stardewvalleywiki.com/Aldeanos">
+            <div class="category-card">
+              <div class="category-icon">
+                <i class="bi bi-people-fill"></i>
+              </div>
+              <h3>Personajes</h3>
+              <p>Conoce a todos los habitantes del Valle</p>
             </div>
-            <h3>Personajes</h3>
-            <p>Conoce a todos los habitantes del Valle</p>
-          </div>
-        </a>
-        </div>
-        
-        <!-- Categoría 2 -->
-        <div class="col-md-4 col-sm-6">
-            <a href="https://es.stardewvalleywiki.com/Cultivos">
-          <div class="category-card" data-bs-toggle="modal" data-bs-target="#categoryModal" data-category="cultivos">
-            <div class="category-icon">
-              <i class="bi bi-flower1"></i>
-            </div>
-            <h3>Cultivos</h3>
-            <p>Guía de todas las semillas y cultivos</p>
-          </div>
-          </a>  
-        </div>
-        
-        <!-- Categoría 3 -->
-        <div class="col-md-4 col-sm-6">
-            <a href="https://es.stardewvalleywiki.com/Herramientas">
-          <div class="category-card" data-bs-toggle="modal" data-bs-target="#categoryModal" data-category="herramientas">
-            <div class="category-icon">
-              <i class="bi bi-tools"></i>
-            </div>
-            <h3>Herramientas</h3>
-            <p>Todas las herramientas y sus mejoras</p>
-          </div>
-        </a>
-        </div>
-        
-        <!-- Categoría 4 -->
-        <div class="col-md-4 col-sm-6">
-            <a href="https://es.stardewvalleywiki.com/Pescados">
-          <div class="category-card" data-bs-toggle="modal" data-bs-target="#categoryModal" data-category="pesca">
-            <div class="category-icon">
-              <i class="bi bi-water"></i>
-            </div>
-            <h3>Pesca</h3>
-            <p>Guía de peces y técnicas de pesca</p>
-          </div>
           </a>
         </div>
-        
-        <!-- Categoría 5 -->
+
         <div class="col-md-4 col-sm-6">
-            <a href="https://es.stardewvalleywiki.com/Las_minas">
-          <div class="category-card" data-bs-toggle="modal" data-bs-target="#categoryModal" data-category="minas">
-            <div class="category-icon">
-              <i class="bi bi-gem"></i>
+          <a href="https://es.stardewvalleywiki.com/Cultivos">
+            <div class="category-card" data-bs-toggle="modal" data-bs-target="#categoryModal" data-category="cultivos">
+              <div class="category-icon">
+                <i class="bi bi-flower1"></i>
+              </div>
+              <h3>Cultivos</h3>
+              <p>Guía de todas las semillas y cultivos</p>
             </div>
-            <h3>Minas</h3>
-            <p>Exploración de minas y minerales</p>
-          </div>
-            </a>
+          </a>
         </div>
-        
-        <!-- Categoría 6 -->
+
         <div class="col-md-4 col-sm-6">
-            <a href="https://es.stardewvalleywiki.com/Cocina">
-          <div class="category-card" data-bs-toggle="modal" data-bs-target="#categoryModal" data-category="recetas">
-            <div class="category-icon">
-              <i class="bi bi-cup-hot-fill"></i>
+          <a href="https://es.stardewvalleywiki.com/Herramientas">
+            <div class="category-card" data-bs-toggle="modal" data-bs-target="#categoryModal"
+              data-category="herramientas">
+              <div class="category-icon">
+                <i class="bi bi-tools"></i>
+              </div>
+              <h3>Herramientas</h3>
+              <p>Todas las herramientas y sus mejoras</p>
             </div>
-            <h3>Recetas</h3>
-            <p>Todas las recetas de cocina</p>
-          </div>
-            </a>
+          </a>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <a href="https://es.stardewvalleywiki.com/Pescados">
+            <div class="category-card" data-bs-toggle="modal" data-bs-target="#categoryModal" data-category="pesca">
+              <div class="category-icon">
+                <i class="bi bi-water"></i>
+              </div>
+              <h3>Pesca</h3>
+              <p>Guía de peces y técnicas de pesca</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <a href="https://es.stardewvalleywiki.com/Las_minas">
+            <div class="category-card" data-bs-toggle="modal" data-bs-target="#categoryModal" data-category="minas">
+              <div class="category-icon">
+                <i class="bi bi-gem"></i>
+              </div>
+              <h3>Minas</h3>
+              <p>Exploración de minas y minerales</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <a href="https://es.stardewvalleywiki.com/Cocina">
+            <div class="category-card" data-bs-toggle="modal" data-bs-target="#categoryModal" data-category="recetas">
+              <div class="category-icon">
+                <i class="bi bi-cup-hot-fill"></i>
+              </div>
+              <h3>Recetas</h3>
+              <p>Todas las recetas de cocina</p>
+            </div>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Artículos Destacados -->
   <section class="py-5 animate" id="featured-articles">
     <div class="container">
       <h2 class="trailer-title text-center mb-5">Artículos Destacados</h2>
-      
+
       <div class="row g-4">
-        <!-- Artículo 1 -->
         <div class="col-lg-6">
           <div class="article-card">
             <div class="row g-0">
               <div class="col-md-4">
-                <img src="../IMG/primavera.jpeg" class="img-fluid rounded-start article-img" alt="Guía de Primavera" style="height: 180px;">
+                <img src="../IMG/primavera.jpeg" class="img-fluid rounded-start article-img" alt="Guía de Primavera"
+                  style="height: 180px;">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title">Guía de Primavera: Año 1</h5>
                   <p class="card-text">Todo lo que necesitas saber para maximizar tu primer año en el valle.</p>
                   <a href="https://es.stardewvalleywiki.com/Gu%C3%ADa_de_Inicio">
-                  <button class="btn btn-sm btn-warning">Leer más</button>
+                    <button class="btn btn-sm btn-warning">Leer más</button>
                   </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        
-        <!-- Artículo 2 -->
+
         <div class="col-lg-6">
           <div class="article-card">
             <div class="row g-0">
               <div class="col-md-4">
-                <img src="../IMG/Community_Center_FR.png" class="img-fluid rounded-start article-img" alt="Centro Comunitario">
+                <img src="../IMG/Community_Center_FR.png" class="img-fluid rounded-start article-img"
+                  alt="Centro Comunitario">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title">Guía del Centro Comunitario</h5>
                   <p class="card-text">Cómo completar todos los paquetes del Centro Comunitario rápidamente.</p>
                   <a href="https://es.stardewvalleywiki.com/Centro_C%C3%ADvico">
-                  <button class="btn btn-sm btn-warning">Leer más</button>
+                    <button class="btn btn-sm btn-warning">Leer más</button>
                   </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        
-        <!-- Artículo 3 -->
+
         <div class="col-lg-6">
           <div class="article-card">
             <div class="row g-0">
@@ -258,27 +223,27 @@
                   <h5 class="card-title">Guía de Relaciones</h5>
                   <p class="card-text">Cómo ganar corazones con todos los personajes y encontrar el amor.</p>
                   <a href="https://es.stardewvalleywiki.com/Socializar">
-                  <button class="btn btn-sm btn-warning">Leer más</button>
+                    <button class="btn btn-sm btn-warning">Leer más</button>
                   </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        
-        <!-- Artículo 4 -->
+
         <div class="col-lg-6">
           <div class="article-card">
             <div class="row g-0">
               <div class="col-md-4">
-                <img src="../IMG/consejos-minas-stardew-valley.jpeg" class="img-fluid rounded-start article-img" alt="Caverna Calavera">
+                <img src="../IMG/consejos-minas-stardew-valley.jpeg" class="img-fluid rounded-start article-img"
+                  alt="Caverna Calavera">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title">Secretos de la Caverna Calavera</h5>
                   <p class="card-text">Guía completa para sobrevivir y prosperar en la peligrosa Caverna Calavera.</p>
                   <a href="https://es.stardewvalleywiki.com/Caverna_Calavera">
-                  <button class="btn btn-sm btn-warning">Leer más</button>
+                    <button class="btn btn-sm btn-warning">Leer más</button>
                   </a>
                 </div>
               </div>
@@ -286,8 +251,7 @@
           </div>
         </div>
       </div>
-      
-      <!-- Paginación -->
+
       <nav aria-label="Navegación de artículos" class="mt-5">
         <ul class="pagination justify-content-center">
           <li class="page-item disabled">
@@ -304,13 +268,11 @@
     </div>
   </section>
 
-  <!-- Actualizaciones Recientes -->
   <section class="py-5 animate" id="recent-updates">
     <div class="container">
       <h2 class="trailer-title text-center mb-5">Actualizaciones Recientes</h2>
-      
+
       <div class="timeline">
-        <!-- Actualización 1 -->
         <div class="timeline-item">
           <div class="timeline-date">
             <span>28 Mar</span>
@@ -321,8 +283,7 @@
             <a href="#" class="btn btn-sm btn-warning">Ver más</a>
           </div>
         </div>
-        
-        <!-- Actualización 2 -->
+
         <div class="timeline-item">
           <div class="timeline-date">
             <span>25 Mar</span>
@@ -333,8 +294,7 @@
             <a href="#" class="btn btn-sm btn-warning">Ver más</a>
           </div>
         </div>
-        
-        <!-- Actualización 3 -->
+
         <div class="timeline-item">
           <div class="timeline-date">
             <span>20 Mar</span>
@@ -345,8 +305,7 @@
             <a href="#" class="btn btn-sm btn-warning">Ver más</a>
           </div>
         </div>
-        
-        <!-- Actualización 4 -->
+
         <div class="timeline-item">
           <div class="timeline-date">
             <span>15 Mar</span>
@@ -358,8 +317,7 @@
           </div>
         </div>
       </div>
-      
-      <!-- Paginación -->
+
       <nav aria-label="Navegación de actualizaciones" class="mt-5">
         <ul class="pagination justify-content-center">
           <li class="page-item disabled">
@@ -377,7 +335,6 @@
   </section>
 
 
-  <!-- Lightbox -->
   <div id="lightbox" class="lightbox">
     <span class="close-lightbox">&times;</span>
     <img class="lightbox-content" id="lightbox-img">
@@ -392,48 +349,35 @@
     <source src="../sound/01. Stardew Valley Overture.mp3" type="audio/mpeg">
   </audio>
 
-  <!-- Footer -->
   <footer class="bg-dark text-center text-white py-4">
     <div class="container">
       <section class="mb-4">
-        <!-- Facebook -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/StardewValley" role="button"
-          ><i class="bi bi-facebook"></i
-        ></a>
-        <!-- Twitter -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://x.com/concernedape" role="button"
-          ><i class="bi bi-twitter"></i
-        ></a>
-        <!-- Google -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://www.reddit.com/r/StardewValley/?rdt=58990" role="button"
-          ><i class="bi bi-reddit"></i
-        ></a>
-        <!-- Instagram -->
-        <a class="btn btn-outline-light btn-floating m-1" href="pablogarcia@emilianisomascos.edu.gt" role="button"
-          ><i class="bi bi-envelope-fill"></i
-        ></a>
-        <!-- Github -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Pablo-Garcia30" role="button"
-          ><i class="bi bi-github"></i
-        ></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/StardewValley" role="button"><i
+            class="bi bi-facebook"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://x.com/concernedape" role="button"><i
+            class="bi bi-twitter"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.reddit.com/r/StardewValley/?rdt=58990"
+          role="button"><i class="bi bi-reddit"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="pablogarcia@emilianisomascos.edu.gt" role="button"><i
+            class="bi bi-envelope-fill"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Pablo-Garcia30" role="button"><i
+            class="bi bi-github"></i></a>
       </section>
       <div class="text-center p-3">
         © 2025 Copyright:
-        <a class="text-white" href="/cdn-cgi/l/email-protection#a5cdd1d1d5d69f8a8ac2ccd1cdd0c78bc6cac88af5c4c7c9ca88e2c4d7c6ccc49695">PabloGarcia</a>
+        <a class="text-white"
+          href="/cdn-cgi/l/email-protection#a5cdd1d1d5d69f8a8ac2ccd1cdd0c78bc6cac88af5c4c7c9ca88e2c4d7c6ccc49695">PabloGarcia</a>
       </div>
     </div>
   </footer>
 
-  <!-- Bootstrap JS -->
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"
-  ></script>
+    crossorigin="anonymous"></script>
 
-  <!-- Custom JS -->
   <script src="../JS/main.js"></script>
   <script src="../JS/wiki.js"></script>
 </body>
-</html>
 
+</html>

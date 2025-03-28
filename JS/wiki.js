@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
   
-    // Animación para los elementos al hacer scroll
     const animatedElements = document.querySelectorAll(".animate")
     function revealOnScroll() {
       animatedElements.forEach((element) => {
@@ -13,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("scroll", revealOnScroll)
     revealOnScroll()
   
-    // Lightbox para imágenes
     const lightbox = document.getElementById("lightbox")
     const lightboxImg = document.getElementById("lightbox-img")
     const closeLightbox = document.querySelector(".close-lightbox")
@@ -30,16 +28,13 @@ document.addEventListener("DOMContentLoaded", () => {
       lightbox.style.display = "none"
     })
   
-    // Cambiar subcategorías al hacer clic
     const subcategories = document.querySelectorAll("#category-list a")
     subcategories.forEach((item) => {
       item.addEventListener("click", function (e) {
         e.preventDefault()
-        // Remover clase active de todos los elementos
         subcategories.forEach((subitem) => {
           subitem.classList.remove("active")
         })
-        // Agregar clase active al elemento clickeado
         this.classList.add("active")
       })
     })
