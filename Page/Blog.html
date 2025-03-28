@@ -1,122 +1,550 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historia y Características de Stardew Valley</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <style>
-        body {
-            background-color: #f8f9fa;
-        }
-        .hero {
-            background: url('IMG/stardew_bg.jpg') no-repeat center center/cover;
-            height: 50vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-        }
-        .card {
-            transition: transform 0.3s;
-        }
-        .card:hover {
-            transform: scale(1.05);
-        }
-        .animate {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: all 0.6s ease-in-out;
-        }
-        .show {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stardew Valley - Blog</title>
+  <link rel="icon" href="../IMG/StardewValleyIco.ico" type="image/x-icon">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+  />
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  />
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Roboto+Slab:wght@100..900&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="../CSS/style.css" />
+  <link rel="stylesheet" href="../CSS/blog.css" />
 </head>
-<body>
-    <header class="hero text-center">
-        <h1 class="display-4 fw-bold">Historia y Características</h1>
-    </header>
 
-    <section class="container py-5">
-        <div class="row">
-            <div class="col-md-12 animate">
-                <h2 class="text-primary">Historia</h2>
-                <p>Stardew Valley fue creado por el desarrollador de juegos Eric Barone, bajo el alias de ConcernedApe. Durante los cuatro años que pasó desarrollándolo en solitario, aprendió por su cuenta las habilidades necesarias para producir la música, el arte, la programación y el diseño del juego. El juego se lanzó para PC el 26 de febrero de 2016 y en dos meses superó el millón de copias vendidas.</p>
-                <p>En pocos meses, el juego amplió la compatibilidad con Mac y Linux; se lanzó para Xbox One y PlayStation 4 en diciembre de 2016, Nintendo Switch a finales de 2017, iOS en octubre de 2018 y Android en marzo de 2019. Ha habido cinco actualizaciones importantes posteriores al lanzamiento: la primera agregó nuevos mapas de granja, opciones de matrimonio y contenido; la segunda amplió los idiomas compatibles para incluir alemán, español, portugués brasileño, ruso, japonés y chino simplificado. La tercera actualización (a finales de 2018) agregó la funcionalidad multijugador, con código de red realizado por el (entonces) programador de Chucklefish, Tom Coxon. A partir de la cuarta actualización, Eric formó un pequeño equipo para ayudarle a actualizar el juego. La cuarta, quinta y sexta actualizaciones añadieron una cantidad considerable de contenido nuevo.</p>
-                <p>Hasta diciembre de 2024, Stardew Valley vendió más de 41 millones de copias en todas las plataformas, con más de 26 millones de copias vendidas en PC y 7,9 millones de copias en Nintendo Switch.</p>
-            </div>
-        </div>
-        <div class="row mt-4">
-            <h2 class="text-primary text-center mb-4">Características</h2>
-            <div class="col-md-4 animate">
-                <div class="card shadow">
-                    <div class="card-body">
-                        <h5 class="card-title text-warning">Crea la granja de tus sueños</h5>
-                        <p class="card-text">Construye tu granja desde cero en 1 de los 5 diseños de mapas adecuados a tu estilo de juego.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 animate">
-                <div class="card shadow">
-                    <div class="card-body">
-                        <h5 class="card-title text-warning">Domina tus habilidades ganaderas</h5>
-                        <p class="card-text">Cría animales, cultiva cultivos, inicia un huerto y construye máquinas útiles.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 animate">
-                <div class="card shadow">
-                    <div class="card-body">
-                        <h5 class="card-title text-warning">Sea parte de la comunidad local</h5>
-                        <p class="card-text">Conozca a los más de 30 residentes de Pelican Town.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 animate mt-4">
-                <div class="card shadow">
-                    <div class="card-body">
-                        <h5 class="card-title text-warning">Personaliza tu granjero</h5>
-                        <p class="card-text">Hay cientos de opciones de personalización de personajes para elegir.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 animate mt-4">
-                <div class="card shadow">
-                    <div class="card-body">
-                        <h5 class="card-title text-warning">Explora cuevas inmensas y misteriosas</h5>
-                        <p class="card-text">¡Encuentra monstruos peligrosos y tesoros valiosos en las profundidades del subsuelo!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 animate mt-4">
-                <div class="card shadow">
-                    <div class="card-body">
-                        <h5 class="card-title text-warning">Multijugador</h5>
-                        <p class="card-text">¡Invita de 1 a 3 jugadores a unirse a ti en el valle y construyan juntos una granja próspera!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<body id="blog-page">
+  <div id="loader-container">
+    <p id="loader-text">Cargando<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span></p>
+  </div>
+  
+  <button id="darkModeToggle" class="btn btn-dark position-fixed top-0 end-0 m-3">🌙</button>
+  
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="nav">
+      <div class="container-fluid">
+        <img src="../IMG/blog.gif" alt="icon" width="30" height="26">
+        <a class="navbar-brand fw-bold" href="../index.html">Stardew Valley</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            let elements = document.querySelectorAll(".animate");
-            function checkScroll() {
-                elements.forEach(el => {
-                    let position = el.getBoundingClientRect().top;
-                    if (position < window.innerHeight - 100) {
-                        el.classList.add("show");
-                    }
-                });
-            }
-            window.addEventListener("scroll", checkScroll);
-            checkScroll();
-        });
-    </script>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto me-3 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="AboutMe.html">About Me</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="Trailers.html">Trailers</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="Media.html">Media</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="Wiki.html">Wiki</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Blog.html">Blog</a>
+            </li> 
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar en el Blog"
+              aria-label="Search"
+            />
+            <button class="btn btn-warning" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero d-flex flex-column justify-content-center align-items-center text-center animate" id="blog-hero">
+    <div class="container">
+      <h1 class="text-white display-4 fw-bold mb-3">Blog de Stardew Valley</h1>
+      <p class="text-white mb-4">
+        Noticias, guías, consejos y experiencias de la comunidad en el Valle
+      </p>
+      <div class="d-flex justify-content-center gap-3">
+        <button class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#newPostModal">
+          <i class="bi bi-pencil-fill me-2"></i>Nueva Entrada
+        </button>
+        <button class="btn btn-outline-light btn-lg">
+          <i class="bi bi-filter me-2"></i>Filtrar
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <div class="container-fluid py-5">
+    <div class="row">
+      <div class="col-lg-8 animate">
+        <div class="featured-post mb-5">
+          <div class="card border-0 shadow">
+            <img src="../IMG/definitiva.jpg" class="card-img-top featured-img" alt="Entrada destacada">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <div class="post-categories">
+                  <span class="badge bg-primary me-1">Actualización</span>
+                  <span class="badge bg-success">Guía</span>
+                </div>
+                <small class="text-muted">28 Marzo, 2025</small>
+              </div>
+              <h2 class="card-title">Guía Completa: Todo sobre la Actualización 1.6</h2>
+              <p class="card-text">
+                La esperada actualización 1.6 de Stardew Valley finalmente ha llegado, trayendo consigo una gran cantidad de nuevo contenido, mejoras y sorpresas. En esta guía, exploraremos todas las novedades y cómo aprovecharlas al máximo.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="author d-flex align-items-center">
+                  <img src="../IMG/consorned.jpg" alt="Autor" class="author-avatar me-2">
+                  <span>Por <strong>ConcernedApe</strong></span>
+                </div>
+                <a href="#" class="btn btn-warning">Leer más</a>
+              </div>
+            </div>
+            <div class="card-footer bg-white border-0 p-4">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="post-stats">
+                  <span><i class="bi bi-eye me-1"></i>1.2k vistas</span>
+                  <span class="ms-3"><i class="bi bi-chat-dots me-1"></i>45 comentarios</span>
+                </div>
+                <div class="post-actions">
+                  <button class="btn btn-sm btn-outline-secondary me-2"><i class="bi bi-bookmark"></i></button>
+                  <button class="btn btn-sm btn-outline-danger"><i class="bi bi-heart"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="regular-posts">
+          <h3 class="section-title mb-4">Entradas Recientes</h3>
+          
+          <div class="blog-post mb-4">
+            <div class="card border-0 shadow">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="../IMG/Getting_Started_-_Wiki_ES.png" class="img-fluid rounded-start post-img" alt="Entrada del blog">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body p-4">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <div class="post-categories">
+                        <span class="badge bg-info me-1">Consejos</span>
+                      </div>
+                      <small class="text-muted">25 Marzo, 2025</small>
+                    </div>
+                    <h4 class="card-title">Los 10 Mejores Consejos para Principiantes</h4>
+                    <p class="card-text">
+                      Si acabas de comenzar tu aventura en Stardew Valley, estos consejos te ayudarán a aprovechar al máximo tus primeros días en el valle.
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="author d-flex align-items-center">
+                        <img src="../IMG/capibara.jpg" alt="Autor" class="author-avatar me-2">
+                        <span>Por <strong>FarmerJoe</strong></span>
+                      </div>
+                      <a href="#" class="btn btn-sm btn-warning">Leer más</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-0 p-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="post-stats">
+                    <span><i class="bi bi-eye me-1"></i>856 vistas</span>
+                    <span class="ms-3"><i class="bi bi-chat-dots me-1"></i>23 comentarios</span>
+                  </div>
+                  <div class="post-actions">
+                    <button class="btn btn-sm btn-outline-secondary me-2"><i class="bi bi-bookmark"></i></button>
+                    <button class="btn btn-sm btn-outline-danger"><i class="bi bi-heart"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="blog-post mb-4">
+            <div class="card border-0 shadow">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="../IMG/blog-post2.jpg" class="img-fluid rounded-start post-img" alt="Entrada del blog">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body p-4">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <div class="post-categories">
+                        <span class="badge bg-warning text-dark me-1">Mods</span>
+                      </div>
+                      <small class="text-muted">20 Marzo, 2025</small>
+                    </div>
+                    <h4 class="card-title">Los 5 Mods Esenciales para Mejorar tu Experiencia</h4>
+                    <p class="card-text">
+                      Estos mods transformarán tu experiencia en Stardew Valley sin alterar la esencia del juego. Perfectos para veteranos que buscan algo nuevo.
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="author d-flex align-items-center">
+                        <img src="../IMG/author-avatar3.jpg" alt="Autor" class="author-avatar me-2">
+                        <span>Por <strong>ModMaster</strong></span>
+                      </div>
+                      <a href="#" class="btn btn-sm btn-warning">Leer más</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-0 p-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="post-stats">
+                    <span><i class="bi bi-eye me-1"></i>723 vistas</span>
+                    <span class="ms-3"><i class="bi bi-chat-dots me-1"></i>18 comentarios</span>
+                  </div>
+                  <div class="post-actions">
+                    <button class="btn btn-sm btn-outline-secondary me-2"><i class="bi bi-bookmark"></i></button>
+                    <button class="btn btn-sm btn-outline-danger"><i class="bi bi-heart"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="blog-post mb-4">
+            <div class="card border-0 shadow">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="../IMG/blog-post3.jpg" class="img-fluid rounded-start post-img" alt="Entrada del blog">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body p-4">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <div class="post-categories">
+                        <span class="badge bg-danger me-1">Historia</span>
+                      </div>
+                      <small class="text-muted">15 Marzo, 2025</small>
+                    </div>
+                    <h4 class="card-title">La Historia Detrás de Stardew Valley</h4>
+                    <p class="card-text">
+                      Descubre cómo Eric Barone (ConcernedApe) creó uno de los juegos indie más exitosos de todos los tiempos trabajando en solitario durante 4 años.
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="author d-flex align-items-center">
+                        <img src="../IMG/author-avatar4.jpg" alt="Autor" class="author-avatar me-2">
+                        <span>Por <strong>GameHistorian</strong></span>
+                      </div>
+                      <a href="#" class="btn btn-sm btn-warning">Leer más</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-0 p-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="post-stats">
+                    <span><i class="bi bi-eye me-1"></i>945 vistas</span>
+                    <span class="ms-3"><i class="bi bi-chat-dots me-1"></i>32 comentarios</span>
+                  </div>
+                  <div class="post-actions">
+                    <button class="btn btn-sm btn-outline-secondary me-2"><i class="bi bi-bookmark"></i></button>
+                    <button class="btn btn-sm btn-outline-danger"><i class="bi bi-heart"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <nav aria-label="Navegación de entradas" class="mt-5">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+              </li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Siguiente</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 animate">
+        <div class="sidebar">
+          <div class="card border-0 shadow mb-4">
+            <div class="card-body p-4">
+              <h4 class="card-title mb-3">¡Suscríbete al Blog!</h4>
+              <p class="card-text text-muted mb-4">Recibe las últimas noticias y actualizaciones directamente en tu correo.</p>
+              
+              <form class="subscription-form">
+                <div class="mb-3">
+                  <label for="subscriberName" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="subscriberName" placeholder="Tu nombre">
+                </div>
+                <div class="mb-3">
+                  <label for="subscriberEmail" class="form-label">Correo Electrónico</label>
+                  <input type="email" class="form-control" id="subscriberEmail" placeholder="tucorreo@ejemplo.com" required>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Intereses</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="guias" id="checkGuias">
+                    <label class="form-check-label" for="checkGuias">
+                      Guías y Tutoriales
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="noticias" id="checkNoticias">
+                    <label class="form-check-label" for="checkNoticias">
+                      Noticias y Actualizaciones
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="mods" id="checkMods">
+                    <label class="form-check-label" for="checkMods">
+                      Mods y Personalizaciones
+                    </label>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="frequencySelect" class="form-label">Frecuencia</label>
+                  <select class="form-select" id="frequencySelect">
+                    <option selected>Selecciona la frecuencia</option>
+                    <option value="daily">Diario</option>
+                    <option value="weekly">Semanal</option>
+                    <option value="monthly">Mensual</option>
+                  </select>
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="termsCheck" required>
+                  <label class="form-check-label" for="termsCheck">Acepto los términos y condiciones</label>
+                </div>
+                <button type="submit" class="btn btn-warning w-100">Suscribirse</button>
+              </form>
+            </div>
+          </div>
+          
+          <div class="card border-0 shadow mb-4">
+            <div class="card-body p-4">
+              <h4 class="card-title mb-3">Categorías Populares</h4>
+              <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                  Guías
+                  <span class="badge bg-warning text-dark rounded-pill">14</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                  Actualizaciones
+                  <span class="badge bg-warning text-dark rounded-pill">8</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                  Mods
+                  <span class="badge bg-warning text-dark rounded-pill">12</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                  Consejos
+                  <span class="badge bg-warning text-dark rounded-pill">9</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                  Historias
+                  <span class="badge bg-warning text-dark rounded-pill">5</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card border-0 shadow mb-4">
+            <div class="card-body p-4">
+              <h4 class="card-title mb-3">Entradas Populares</h4>
+              <div class="popular-posts">
+                <div class="popular-post d-flex mb-3">
+                  <img src="../IMG/popular-post1.jpg" alt="Entrada popular" class="popular-post-img me-3">
+                  <div>
+                    <h6 class="mb-1">Guía de Romances: Todos los Solteros</h6>
+                    <small class="text-muted">10 Marzo, 2025</small>
+                  </div>
+                </div>
+                
+                <div class="popular-post d-flex mb-3">
+                  <img src="../IMG/popular-post2.jpg" alt="Entrada popular" class="popular-post-img me-3">
+                  <div>
+                    <h6 class="mb-1">Cómo Ganar el Festival de la Estrella</h6>
+                    <small class="text-muted">5 Marzo, 2025</small>
+                  </div>
+                </div>
+                
+                <div class="popular-post d-flex">
+                  <img src="../IMG/popular-post3.jpg" alt="Entrada popular" class="popular-post-img me-3">
+                  <div>
+                    <h6 class="mb-1">Los Mejores Cultivos para Cada Temporada</h6>
+                    <small class="text-muted">1 Marzo, 2025</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card border-0 shadow">
+            <div class="card-body p-4">
+              <h4 class="card-title mb-3">Etiquetas</h4>
+              <div class="tags">
+                <a href="#" class="tag">Cultivos</a>
+                <a href="#" class="tag">Animales</a>
+                <a href="#" class="tag">Pesca</a>
+                <a href="#" class="tag">Minería</a>
+                <a href="#" class="tag">Relaciones</a>
+                <a href="#" class="tag">Festivales</a>
+                <a href="#" class="tag">Secretos</a>
+                <a href="#" class="tag">Mods</a>
+                <a href="#" class="tag">Consejos</a>
+                <a href="#" class="tag">Principiantes</a>
+                <a href="#" class="tag">Avanzado</a>
+                <a href="#" class="tag">Decoración</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="newPostModal" tabindex="-1" aria-labelledby="newPostModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="newPostModalLabel">Crear Nueva Entrada</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="newPostForm">
+            <div class="mb-3">
+              <label for="postTitle" class="form-label">Título</label>
+              <input type="text" class="form-control" id="postTitle" placeholder="Título de tu entrada" required>
+            </div>
+            
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="postCategory" class="form-label">Categoría</label>
+                <select class="form-select" id="postCategory" required>
+                  <option value="" selected disabled>Selecciona una categoría</option>
+                  <option value="guias">Guías</option>
+                  <option value="noticias">Noticias</option>
+                  <option value="consejos">Consejos</option>
+                  <option value="mods">Mods</option>
+                  <option value="historias">Historias</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="postTags" class="form-label">Etiquetas</label>
+                <input type="text" class="form-control" id="postTags" placeholder="Separadas por comas">
+              </div>
+            </div>
+            
+            <div class="mb-3">
+              <label for="postImage" class="form-label">Imagen de Portada</label>
+              <input class="form-control" type="file" id="postImage">
+            </div>
+            
+            <div class="mb-3">
+              <label for="postContent" class="form-label">Contenido</label>
+              <textarea class="form-control" id="postContent" rows="6" placeholder="Escribe tu entrada aquí..." required></textarea>
+            </div>
+            
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="publishCheck">
+              <label class="form-check-label" for="publishCheck">Publicar inmediatamente</label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-warning" id="savePostBtn">Guardar Entrada</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="lightbox" class="lightbox">
+    <span class="close-lightbox">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+  </div>
+
+  <div class="audio-container">
+    <button id="playPauseBtn" class="btn">⏸</button>
+    <input type="range" id="volumeControl" class="volume-slider" min="0" max="1" step="0.1" value="0.1">
+  </div>
+
+  <audio id="audio" loop autoplay>
+    <source src="../sound/01. Stardew Valley Overture.mp3" type="audio/mpeg">
+  </audio>
+
+  <footer class="bg-dark text-center text-white py-4">
+    <div class="container">
+      <section class="mb-4">
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/StardewValley" role="button"
+          ><i class="bi bi-facebook"></i
+        ></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://x.com/concernedape" role="button"
+          ><i class="bi bi-twitter"></i
+        ></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.reddit.com/r/StardewValley/?rdt=58990" role="button"
+          ><i class="bi bi-reddit"></i
+        ></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="pablogarcia@emilianisomascos.edu.gt" role="button"
+          ><i class="bi bi-envelope-fill"></i
+        ></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Pablo-Garcia30" role="button"
+          ><i class="bi bi-github"></i
+        ></a>
+      </section>
+      <div  role="button"
+          ><i class="bi bi-github"></i
+        ></a>
+      </section>
+      <div class="text-center p-3">
+        © 2025 Copyright:
+        <a class="text-white" href="/cdn-cgi/l/email-protection#a5cdd1d1d5d693868cc0ccd1cdc0cb89c6cac889f5c4c7c5ca88e2c4d7c6ccc48a85">PabloGarcia</a>
+      </div>
+    </div>
+  </footer>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+
+  <script src="../JS/main.js"></script>
+  <script src="../JS/blog.js"></script>
 </body>
 </html>
+
