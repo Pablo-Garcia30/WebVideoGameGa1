@@ -1,4 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
+  let progressBar = document.getElementById("progress-bar");
+  let loaderContainer = document.getElementById("loader-container");
+  let width = 0;
+
+  setTimeout(function () {
+    document.getElementById("loader-container").style.display = "none";
+}, 3000); // Simula una carga de 3 segundos
     // Modo Oscuro
     const darkModeToggle = document.getElementById("darkModeToggle");
     darkModeToggle.addEventListener("click", function() {
